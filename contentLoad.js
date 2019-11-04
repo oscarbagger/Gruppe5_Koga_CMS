@@ -1,30 +1,21 @@
 window.addEventListener("DOMContentLoaded",Start);
 
-let cykler;
 let content;
-const url="https://oscarbagger.dk/kea/Gruppe5_Koga_CMS/wordpress/wp-json/wp/v2/posts"
 const footerUrl="footer.html";
+const navUrl="navigation.html"
 
 const footer=document.querySelector("footer");
+const header=document.querySelector("header");
 
 function Start()
-{
-    GetJson(); 
-    GetHtml(footerUrl);
+{ 
+    GetHtml(footerUrl, footer);
+    GetHtml(navUrl,header);
 }
 
-
-async function GetJson()
-{
-    const response= await fetch(url);
-    cykler= await response.json();
-    console.log(cykler);
-}
-
-async function GetHtml(myUrl)
+async function GetHtml(myUrl, contentDest)
 {
     const response= await fetch(myUrl);
     content= await response.text();
-    footer.innerHTML=content;
-    console.log(content);
+    contentDest.innerHTML=content;
 }
