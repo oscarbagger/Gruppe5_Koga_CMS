@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded",Start);
 
 let content;
 const footerUrl="footer.html";
-const navUrl="navigation.html"
+const navUrl="navigation.html";
 
 const footer=document.querySelector("footer");
 const header=document.querySelector("header");
