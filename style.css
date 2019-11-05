@@ -1,8 +1,102 @@
 * {
-    margin: 0;
+	margin: 0;
 }
 
 main {
-    display: grid;
+	display: grid;
 }
 
+img {
+	width: 100%;
+}
+
+/**********/
+/* Header */
+/**********/
+
+#logo {
+	width: 50%;
+}
+
+.burger {
+	padding: 0em 0.5em;
+	width: 8%;
+}
+
+/*********************/
+/* text/font on site */
+/*********************/
+
+section p {
+	margin: 0.5em;
+}
+
+/******************/
+/* button styling */
+/******************/
+
+/**********/
+/* Footer */
+/**********/
+
+footer {
+	text-align: center;
+	padding-bottom: 0.3em;
+	margin: auto;
+}
+
+footer #contact_info {
+	display: inline;
+	text-align: center;
+}
+
+footer #contact_info a {
+	text-decoration: none;
+	color: darkblue;
+}
+
+#socialmedia_buttons .some-fb {
+	display: inline-block;
+	padding: 0em 0.5em;
+	width: 35px;
+	height: 45px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(images/iconmonstr-facebook-3-240.png);
+}
+
+#socialmedia_buttons .some-tw {
+	display: inline-block;
+	padding: 0em 0.5em;
+	width: 35px;
+	height: 45px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(images/iconmonstr-twitter-3-240.png);
+}
+
+#socialmedia_buttons .some-yt {
+	display: inline-block;
+	padding: 0em 0.5em;
+	width: 35px;
+	height: 45px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(images/iconmonstr-youtube-8-240.png);
+}
+
+/*****************/
+/* Responsivitet */
+/*****************/
+
+
+/**********/
+/* Tablet */
+/**********/
+
+/*************/
+/* PC screen */
+/*************/
