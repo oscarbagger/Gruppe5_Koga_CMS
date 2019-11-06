@@ -107,7 +107,9 @@ section p {
 /* Content */
 /***********/
 
-.kategorier {}
+.kategorier {
+	display: flex;
+}
 
 .kategori_el {
 	background-image: url(images/elbike.jpg);
