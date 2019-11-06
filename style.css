@@ -21,7 +21,8 @@ img {
 /**********/
 
 #logo img {
-	width: 10em;
+	width: 40vw;
+	height: 7vh;
 	padding: 0.3em 0.4em;
 	cursor: pointer;
 }
@@ -35,11 +36,11 @@ img {
 	list-style-type: none;
 	text-decoration: none;
 	width: 100%;
-
 	padding: 0.3em;
 	flex-wrap: wrap;
 	flex-direction: column;
 	display: block;
+	font-family: sans-serif;
 }
 
 .nav_link:hover {
@@ -112,6 +113,9 @@ section p {
 /***********/
 
 .kategorier {
+	display: flex;
+	flex: 30%;
+	padding: 0.5em;
 	width: 60vw;
 	height: 10vh;
 }
