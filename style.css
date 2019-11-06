@@ -48,6 +48,7 @@ nav {
 	flex-direction: column;
 	display: block;
 	font-family: sans-serif;
+	cursor: pointer;
 
 }
 
@@ -230,10 +231,18 @@ footer #contact_info a {
 /* Responsivitet */
 /*****************/
 
-/*@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 400px) {
 
+	.nav_link a {
+		flex-direction: row;
+		margin: 1rem 0.5rem;
+		margin-right: -2rem;
+		display: inline-block;
+
+	}
 }
 
+/*
 @media only screen and (min-width: 500px) {
 
 }
