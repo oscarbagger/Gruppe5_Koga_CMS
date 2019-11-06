@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded",Start);
 
 let cykler=[];
-const url="https://oscarbagger.dk/kea/Gruppe5_Koga_CMS/wordpress/wp-json/wp/v2/cykel";
+const url="https://oscarbagger.dk/kea/Gruppe5_Koga_CMS/wordpress/wp-json/wp/v2/cykel/?&per_page=99";
 const temp=document.querySelector("template");
 const list=document.querySelector(".list");
 
@@ -23,10 +23,10 @@ function ShowList()
 {
     cykler.forEach(cykel => {
         let clone=temp.cloneNode(true).content;
-        clone.querySelector("img").src=cykel.billede.guid;
+        clone.querySelector("img").src=cykel.billede[0].guid;
         clone.querySelector("img").alt=cykel.title.rendered;
-        clone.querySelector(".kortTekst").textContent=cykel.kort_tekst.rendered;
-        clone.querySelector(".pris").textContent=cykel.pris.rendered;
+        clone.querySelector(".kortTekst").textContent=cykel.kort_tekst;
+        clone.querySelector(".pris").textContent="Pris: "+cykel.pris+" kr";
         list.appendChild(clone);
         // eventlistener to go to singleview
         list.lastElementChild.addEventListener("click",() => {
