@@ -40,6 +40,7 @@ img {
 	list-style-type: none;
 	text-decoration: none;
 	width: 100%;
+
 	padding: 0.3em;
 	flex-wrap: wrap;
 	flex-direction: column;
