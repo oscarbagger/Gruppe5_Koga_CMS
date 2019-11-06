@@ -23,6 +23,7 @@ function ShowList()
 {
     cykler.forEach(cykel => {
         let clone=temp.cloneNode(true).content;
+        clone.querySelector(".title").textContent=cykel.title.rendered;
         clone.querySelector("img").src=cykel.billede[0].guid;
         clone.querySelector("img").alt=cykel.title.rendered;
         clone.querySelector(".kortTekst").textContent=cykel.kort_tekst;
