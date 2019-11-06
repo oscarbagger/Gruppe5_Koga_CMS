@@ -29,9 +29,9 @@ img {
 	width: 8%;
 }
 
-/**************/
-/* navigation */
-/**************/
+/***********************/
+/* navigation og links */
+/***********************/
 
 .nav_link {
 	color: black;
@@ -46,7 +46,14 @@ img {
 
 .nav_link:hover {
 	color: red;
+}
 
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
 }
 
 /****************/
