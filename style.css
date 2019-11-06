@@ -68,6 +68,10 @@ img {
 /* text/font on site */
 /*********************/
 
+h3 {
+	text-align: center;
+}
+
 section p {
 	margin: 0.5em;
 }
@@ -108,45 +112,53 @@ section p {
 /***********/
 
 .kategorier {
-	display: flex;
-	width: 70vw;
+	width: 60vw;
 	height: 10vh;
+}
+
+.kategorier p {
+	padding-top: 1.3em;
+	font-family: sans-serif;
 }
 
 .kategori_el {
 	background-image: url(images/elbike.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 25vw;
+	width: 20vw;
 	height: 100%;
-}
-
-.kategori_el a:hover {
-	filter: grey(80%);
+	text-align: center;
+	color: white;
 }
 
 .kategori_trekk {
 	background-image: url(images/trekking.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 25vw;
+	width: 20vw;
 	height: 100%;
+	text-align: center;
+	color: white;
 }
 
 .kategori_city {
 	background-image: url(images/city.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 25vw;
+	width: 20vw;
 	height: 100%;
+	text-align: center;
+	color: white;
 }
 
 .kategori_race {
 	background-image: url(images/race.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 25vw;
+	width: 20vw;
 	height: 100%;
+	text-align: center;
+	color: white;
 }
 
 /**********/
