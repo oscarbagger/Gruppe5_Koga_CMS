@@ -231,8 +231,11 @@ footer #contact_info a {
 /* Responsivitet */
 /*****************/
 
-@media only screen and (min-width: 400px) {
+/*@media only screen and (min-width: 400px) {
 
+}
+
+@media only screen and (min-width: 500px) {
 	.nav_link a {
 		flex-direction: row;
 		margin: 1rem 0.5rem;
@@ -240,10 +243,6 @@ footer #contact_info a {
 		display: inline-block;
 
 	}
-}
-
-/*
-@media only screen and (min-width: 500px) {
 
 }
 
