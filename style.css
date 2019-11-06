@@ -23,11 +23,7 @@ img {
 #logo img {
 	width: 10em;
 	padding: 0.3em 0.4em;
-}
-
-.burger {
-	padding: 0em 0.5em;
-	width: 8%;
+	cursor: pointer;
 }
 
 /***********************/
@@ -39,6 +35,7 @@ img {
 	list-style-type: none;
 	text-decoration: none;
 	width: 100%;
+
 	padding: 0.3em;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -48,6 +45,36 @@ img {
 .nav_link:hover {
 	color: red;
 }
+
+.burger {
+	padding: 0em 0.5em;
+	width: 8%;
+}
+
+
+/****************/
+/* splash image */
+/****************/
+#splash_image {
+	background-image: url(images/examplesplash.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 52% 0%;
+	width: 100vw;
+	height: 100%;
+}
+
+/*********************/
+/* text/font on site */
+/*********************/
+
+section p {
+	margin: 0.5em;
+}
+
+/******************/
+/* button styling */
+/******************/
 
 .buttons a {
 	text-decoration: none;
@@ -76,29 +103,46 @@ img {
 	top: 1px;
 }
 
-/****************/
-/* splash image */
-/****************/
-#splash_image {
-	background-image: url(images/examplesplash.jpg);
+/***********/
+/* Content */
+/***********/
+
+.kategorier {
+	display: flex;
+}
+
+.kategori_el {
+	background-image: url(images/elbike.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 52% 0%;
-	width: 100vw;
+	width: 25vw;
+	height: 100%;
+
+}
+
+.kategori_trekk {
+	background-image: url(images/trekking.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 25vw;
 	height: 100%;
 }
 
-/*********************/
-/* text/font on site */
-/*********************/
-
-section p {
-	margin: 0.5em;
+.kategori_city {
+	background-image: url(images/city.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 25vw;
+	height: 100%;
 }
 
-/******************/
-/* button styling */
-/******************/
+.kategori_race {
+	background-image: url(images/race.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 25vw;
+	height: 100%;
+}
 
 /**********/
 /* Footer */
