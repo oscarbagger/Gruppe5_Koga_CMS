@@ -10,6 +10,7 @@ main {
 		"header"
 		"main"
 		"footer";
+	padding: 10px;
 }
 
 img {
@@ -21,7 +22,7 @@ img {
 /**********/
 
 #logo img {
-	width: 40vw;
+	width: 40%;
 	height: 7vh;
 	padding: 0.3em 0.4em;
 	cursor: pointer;
@@ -30,6 +31,12 @@ img {
 /***********************/
 /* navigation og links */
 /***********************/
+
+nav {
+	display: block;
+	text-align: right;
+	padding-right: 2em;
+}
 
 .nav_link {
 	color: black;
@@ -41,6 +48,7 @@ img {
 	flex-direction: column;
 	display: block;
 	font-family: sans-serif;
+
 }
 
 .nav_link:hover {
