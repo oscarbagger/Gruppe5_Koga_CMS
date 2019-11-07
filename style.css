@@ -231,30 +231,31 @@ footer #contact_info a {
 /* Responsivitet */
 /*****************/
 
-/*@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 400px) {}
 
-}
-
-@media only screen and (min-width: 500px) {
-	.nav_link a {
-		flex-direction: row;
-		margin: 1rem 0.5rem;
-		margin-right: -2rem;
-		display: inline-block;
-
-	}
-
-}
+@media only screen and (min-width: 500px) {}
 
 @media only screen and (min-width: 800px) {
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
 
+	.nav_link {
+		width: auto;
+		margin-right: 1em;
+		font-size: 1.5em;
+		font-weight: 700;
+	}
+
+	.nav_link:last-child {
+		margin-right: 0;
+	}
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {}
 
-}
-
-*/
 
 
 /**********/
