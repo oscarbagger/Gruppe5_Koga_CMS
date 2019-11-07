@@ -148,6 +148,7 @@ section p {
 	padding: 0.5em;
 	width: 60vw;
 	height: 10vh;
+	/*margin-right set into web section*/
 }
 
 .kategorier p {
