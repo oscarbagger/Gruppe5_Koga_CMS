@@ -61,10 +61,14 @@ nav {
 	width: 8%;
 }
 
+p a {
+	text-decoration: none;
+}
 
 /****************/
 /* splash image */
 /****************/
+
 section #splash_image {
 	background-image: url(images/examplesplash.jpg);
 	background-repeat: no-repeat;
@@ -78,6 +82,16 @@ section #splash_image {
 /* text/font on site */
 /*********************/
 
+h1 {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+h2 {
+	font-family: sans-serif;
+	text-align: center;
+}
+
 h3 {
 	text-align: center;
 }
@@ -89,6 +103,12 @@ section p {
 /******************/
 /* button styling */
 /******************/
+
+.buttons {
+	text-align: center;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
 
 .buttons a {
 	text-decoration: none;
@@ -123,6 +143,7 @@ section p {
 
 .kategorier {
 	display: flex;
+	flex-direction: row;
 	flex: 30%;
 	padding: 0.5em;
 	width: 60vw;
