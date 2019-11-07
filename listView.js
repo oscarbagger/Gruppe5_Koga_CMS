@@ -15,7 +15,7 @@ console.log(myCategory);
 function Start()
 {
     kategoriNavn.textContent=myCategory;
-    //TextToLoad();
+    TextToLoad();
     GetJson(); 
 }
 
@@ -29,7 +29,7 @@ function TextToLoad()
         case "Trekking":
             txt="trekking";
             break;
-        case "City & Touring":
+        case "City":
             txt="city-touring";
             break;
         case "Race":
