@@ -6,6 +6,8 @@ const temp=document.querySelector("template");
 const list=document.querySelector(".list");
 const kategoriNavn=document.querySelector(".kategoriNavn");
 
+const loadedContentRef=document.querySelector(".loadedPageContent");
+
 let urlParams = new URLSearchParams(window.location.search);
 let myCategory=urlParams.get("kategori");
 console.log(myCategory);
@@ -13,7 +15,28 @@ console.log(myCategory);
 function Start()
 {
     kategoriNavn.textContent=myCategory;
+    //TextToLoad();
     GetJson(); 
+}
+
+function TextToLoad()
+{
+    let txt="";
+    switch(myCategory) {
+        case "E-bike":
+            txt="e-bikes";
+            break;
+        case "Trekking":
+            txt="trekking";
+            break;
+        case "City & Touring":
+            txt="city-touring";
+            break;
+        case "Race":
+            txt="race";
+            break;
+    }
+    loadedContentRef.textContent=txt;
 }
 
 
@@ -43,4 +66,7 @@ function ShowList()
         }
     })
 }
+
+
+
 

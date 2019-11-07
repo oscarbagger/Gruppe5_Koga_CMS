@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded",Start);
+window.addEventListener("DOMContentLoaded",StartLoad);
 
 let content;
 const footerUrl="footer.html";
@@ -10,25 +10,24 @@ const main=document.querySelector("main");
 const footer=document.querySelector("footer");
 const header=document.querySelector("header");
 
-function Start()
+function StartLoad()
 { 
     GetHtml(footerUrl, footer);
     GetHtml(navUrl,header);
-    
     // check if there exists a class saying that content needs to be loaded in.
     if (document.querySelector(".loadedPageContent") !== null) {
-        GetJson();
+        GetJsonContent();
     }
 }
 
 async function GetHtml(myUrl, contentDest)
 {
-    const response= await fetch(myUrl);
-    content= await response.text();
+    const htmlResponse= await fetch(myUrl);
+    content= await htmlResponse.text();
     contentDest.innerHTML=content;
 }
 
-async function GetJson()
+async function GetJsonContent()
 {
     const jsonData= await fetch(pageURl);
     pages= await jsonData.json();
@@ -41,7 +40,8 @@ function InsertContent()
     pages.forEach(page => {
         if (page.slug==pageText)
             {
-            main.innerHTML=page.content.rendered;
+                main.innerHTML=page.content.rendered+main.innerHTML;
+                console.log("loaded");
             }
     })
 

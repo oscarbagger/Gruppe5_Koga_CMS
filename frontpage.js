@@ -14,7 +14,7 @@ function Start()
         location.href="kategori.html?kategori="+"Trekking";
     });
     city.addEventListener("click", () => {
-        location.href="kategori.html?kategori="+"City & Touring";
+        location.href="kategori.html?kategori="+"City";
     });
     race.addEventListener("click", () => {
         location.href="kategori.html?kategori="+"Race";
