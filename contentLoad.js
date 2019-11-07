@@ -14,6 +14,11 @@ function Start()
 { 
     GetHtml(footerUrl, footer);
     GetHtml(navUrl,header);
+    
+    // check if there exists a class saying that content needs to be loaded in.
+    if (document.querySelector(".loadedPageContent") !== null) {
+        GetJson();
+    }
 }
 
 async function GetHtml(myUrl, contentDest)
@@ -27,4 +32,17 @@ async function GetJson()
 {
     const jsonData= await fetch(pageURl);
     pages= await jsonData.json();
+    InsertContent();
+}
+
+function InsertContent()
+{
+    let pageText=document.querySelector(".loadedPageContent").textContent;
+    pages.forEach(page => {
+        if (page.slug==pageText)
+            {
+            main.innerHTML=page.content.rendered;
+            }
+    })
+
 }
