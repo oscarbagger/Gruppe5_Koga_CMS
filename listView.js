@@ -21,7 +21,6 @@ async function GetJson()
 {
     const response= await fetch(url);
     cykler= await response.json();
-    console.log(cykler);
     ShowList();
 }
 
