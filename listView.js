@@ -15,7 +15,7 @@ console.log(myCategory);
 function Start()
 {
     kategoriNavn.textContent=myCategory;
-    TextToLoad();
+    //TextToLoad();
     GetJson(); 
 }
 
