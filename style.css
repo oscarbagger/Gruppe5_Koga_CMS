@@ -49,14 +49,11 @@ nav {
 	display: block;
 	font-family: sans-serif;
 	cursor: pointer;
-
 }
 
 .nav_link:hover {
 	color: red;
 }
-
-.burger {}
 
 p a {
 	text-decoration: none;
@@ -87,6 +84,8 @@ h1 {
 h2 {
 	font-family: sans-serif;
 	text-align: center;
+	padding-bottom: 1em;
+	padding-top: 1em;
 }
 
 h3 {
@@ -95,8 +94,17 @@ h3 {
 
 .innholdstekst {
 	margin: 0.5em;
+	padding-top: 1em;
+	font-family: sans-serif;
+	font-size: 1em;
+	text-align: center;
+}
+
+p {
 	font-family: sans-serif;
 	font-size: 0.8em;
+	padding: 0.5em;
+	letter-spacing: 3px;
 }
 
 /******************/
@@ -247,6 +255,9 @@ footer #contact_info a {
 	}
 
 	.kategorier {
+		width: 40em;
+		/* få sjekket denne ut */
+		align-content: center;
 		overflow: hidden;
 	}
 
