@@ -186,17 +186,17 @@ p {
 
 .mapouter {
 	position: relative;
-	text-align: right;
-	height: 100vh;
-	width: 200vw;
+	text-align: left;
+	height: 80vh;
+	width: 100vw;
 	border-style: none;
 }
 
-.gmap_canvas {
+.gmap_canvas iframe {
 	overflow: hidden;
 	background: none !important;
-	height: 90vh;
-	width: 90vw;
+	height: 60vh;
+	width: 80vw;
 	border-style: none;
 }
 
@@ -310,6 +310,16 @@ footer #contact_info a {
 		filter: grayscale(1);
 		transform: scale(1.5);
 	}
+
+	.mapouter {
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.gmap_canvas iframe {
+		height: 60vh;
+		width: 70vw;
+	}
 }
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width 801px) and (max-width: 1200px) {}
