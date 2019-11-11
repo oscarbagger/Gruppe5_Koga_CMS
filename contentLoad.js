@@ -10,6 +10,8 @@ const main=document.querySelector("main");
 const footer=document.querySelector("footer");
 const header=document.querySelector("header");
 
+let menuIsOpen=false;
+
 function StartLoad()
 { 
     GetNav();
@@ -25,16 +27,17 @@ async function GetNav()
     const htmlResponse= await fetch(navUrl);
     content= await htmlResponse.text();
     header.innerHTML=content;
-    let nav=header.querySelector("nav");
+    let nav=header.querySelector(".menuItems");
     let menu=header.querySelector(".burgermenu");
-    let close=header.querySelector(".burger_close")
     menu.addEventListener("click", () => {
-        if(nav.style.display="none")
+        if(menuIsOpen==false)
             {
+                menuIsOpen=true;
                 nav.style.display="flex";
                 menu.querySelector("img").src=src="images/burger_close.png";
             }
         else {
+            menuIsOpen=false;
             nav.style.display="none";
             menu.querySelector("img").src=src="images/iconmonstr-menu-1.svg";
         }
