@@ -164,16 +164,15 @@ p {
 
 .kategorier p {
 	position: absolute;
-	color: red;
-	font-weight: 500;
-	/* will be changed */
+	color: white;
+	font-weight: 600;
 	font-family: sans-serif;
 	font-size: 2em;
+	text-shadow: 3px 3px 3px black;
 }
 
 .kategori_img {
 	padding: 0.3em;
-
 }
 
 #banner {
@@ -293,8 +292,6 @@ footer #contact_info a {
 		width: 40vw;
 	}
 
-	article {}
-
 	.kategorier {
 		width: 40em;
 		/* få sjekket denne ut */
@@ -309,7 +306,7 @@ footer #contact_info a {
 	.kategori_img img:hover {
 		filter: grayscale(1);
 		transform: scale(1.5);
-        transition: transform .3s ease;
+		transition: transform .3s ease;
 	}
 
 	.mapouter {
