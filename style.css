@@ -104,7 +104,7 @@ p {
 	font-family: sans-serif;
 	font-size: 0.8em;
 	padding: 0.5em;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 }
 
 /******************/
@@ -253,6 +253,16 @@ footer #contact_info a {
 	.nav_link:last-child {
 		margin-right: 0;
 	}
+
+	.wp-block-image {
+		width: 40vw;
+	}
+
+	.cykelBillede {
+		width: 40vw;
+	}
+
+	article {}
 
 	.kategorier {
 		width: 40em;
