@@ -40,7 +40,7 @@ nav {
 	display: block;
 	text-align: right;
 	padding-right: 1em;
-	font-size: 1.1em;
+	font-size: 0.9em;
 }
 
 .nav_link {
@@ -57,7 +57,8 @@ nav {
 }
 
 .nav_link:hover {
-	color: red;
+	color: #0e7dc7;
+	text-decoration: underline;
 }
 
 p a {
