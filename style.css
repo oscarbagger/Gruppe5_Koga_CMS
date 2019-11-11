@@ -262,38 +262,38 @@ footer #contact_info a {
 		overflow: hidden;
 	}
 
-	.kategori_el {
+	.kategori_el img {
 		transition: transform .3s ease;
 	}
 
-	.kategori_el:hover {
+	.kategori_el img:hover {
 		filter: grayscale(1);
 		transform: scale(1.5);
 	}
 
-	.kategori_trekk {
+	.kategori_trekk img {
 		transition: transform .3s ease;
 	}
 
-	.kategori_trekk:hover {
+	.kategori_trekk img:hover {
 		filter: grayscale(1);
 		transform: scale(1.5);
 	}
 
-	.kategori_city {
+	.kategori_city img {
 		transition: transform .3s ease;
 	}
 
-	.kategori_city:hover {
+	.kategori_city img:hover {
 		filter: grayscale(1);
 		transform: scale(1.5);
 	}
 
-	.kategori_race {
+	.kategori_race img {
 		transition: transform .3s ease;
 	}
 
-	.kategori_race:hover {
+	.kategori_race img:hover {
 		filter: grayscale(1);
 		transform: scale(1.5);
 	}
