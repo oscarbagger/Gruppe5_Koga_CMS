@@ -1,13 +1,13 @@
 window.addEventListener("DOMContentLoaded",Start);
 
-const el= document.querySelector(".kategori_el");
-const trekking=document.querySelector(".kategori_trekk");
-const city= document.querySelector(".kategori_city");
-const race=document.querySelector(".kategori_race");
+const el= document.querySelector(".el");
+const trekking=document.querySelector(".trekk");
+const city= document.querySelector(".city");
+const race=document.querySelector(".race");
 
 function Start()
 { 
-    el.addEventListener("click" ,()=> {
+    el.addEventListener("click" ,() => {
         location.href="kategori.html?kategori="+"E-bike";
     });
     trekking.addEventListener("click", () => {
