@@ -12,19 +12,35 @@ const header=document.querySelector("header");
 
 function StartLoad()
 { 
-    GetHtml(footerUrl, footer);
-    GetHtml(navUrl,header);
+    GetNav();
+    GetFooter();
     // check if there exists a class saying that content needs to be loaded in.
     if (document.querySelector(".loadedPageContent") !== null) {
         GetJsonContent();
     }
 }
 
-async function GetHtml(myUrl, contentDest)
+async function GetNav()
 {
-    const htmlResponse= await fetch(myUrl);
+    const htmlResponse= await fetch(navUrl);
     content= await htmlResponse.text();
-    contentDest.innerHTML=content;
+    header.innerHTML=content;
+    let nav=header.querySelector("nav");
+    let menu=header.querySelector(".burgermenu");
+    menu.addEventListener("click", () => {
+        if(nav.style.display="none")
+            {
+                nav.style.display="flex";
+                menu.style.display="none";
+            }
+    })
+}
+
+async function GetFooter()
+{
+    const htmlResponse= await fetch(footerUrl);
+    content= await htmlResponse.text();
+    footer.innerHTML=content;
 }
 
 async function GetJsonContent()
@@ -44,5 +60,4 @@ function InsertContent()
                 console.log("loaded");
             }
     })
-
 }

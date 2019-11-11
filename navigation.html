@@ -3,9 +3,54 @@
 		<img src="images/koga_logo.jpg" alt="sitelogo">
 	</a>
 </div>
+<div class="burgermenu">
+    <img src="images/iconmonstr-menu-1.svg" alt="burgermenu">
+</div>
 <nav>
 	<a href="index.html" class="nav_link">Forside</a>
 	<a href="modeller.html" class="nav_link">Modeller</a>
 	<a href="about.html" class="nav_link">Om os</a>
 	<a href="kontakt.html" class="nav_link">Kontakt</a>
 </nav>
+<style>
+    header {
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .burgermenu {
+        width: 8vw;
+        height: 7vh;
+        padding: 0.3em 0.4em;
+    }
+    
+    nav {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        background-color: white;
+    }
+    
+    @media only screen and (min-width: 800px) {
+        .burgermenu {
+            display: none;
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            text-align: center;
+            width: auto;
+            height: auto;
+            position: relative;
+            background-color: none;
+        }
+    }
+</style>
