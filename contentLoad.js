@@ -27,12 +27,17 @@ async function GetNav()
     header.innerHTML=content;
     let nav=header.querySelector("nav");
     let menu=header.querySelector(".burgermenu");
+    let close=header.querySelector(".burger_close")
     menu.addEventListener("click", () => {
         if(nav.style.display="none")
             {
                 nav.style.display="flex";
-                menu.style.display="none";
+                menu.querySelector("img").src=src="images/burger_close.png";
             }
+        else {
+            nav.style.display="none";
+            menu.querySelector("img").src=src="images/iconmonstr-menu-1.svg";
+        }
     })
 }
 

@@ -303,12 +303,13 @@ footer #contact_info a {
 	}
 
 	.kategori_img {
-		transition: transform .3s ease;
+		overflow: hidden;
 	}
 
 	.kategori_img img:hover {
 		filter: grayscale(1);
 		transform: scale(1.5);
+        transition: transform .3s ease;
 	}
 
 	.mapouter {

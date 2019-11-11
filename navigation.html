@@ -3,15 +3,15 @@
 		<img src="images/koga_logo.svg" alt="sitelogo">
 	</a>
 </div>
-<div class="burgermenu">
-    <img src="images/iconmonstr-menu-1.svg" alt="burgermenu">
-</div>
 <nav>
 	<a href="index.html" class="nav_link">Forside</a>
 	<a href="modeller.html" class="nav_link">Modeller</a>
 	<a href="about.html" class="nav_link">Om os</a>
 	<a href="kontakt.html" class="nav_link">Kontakt</a>
 </nav>
+<div class="burgermenu">
+    <img src="images/iconmonstr-menu-1.svg" alt="burgermenu">
+</div>
 <style>
     header {
         width: 100%;
@@ -26,16 +26,14 @@
         width: 8vw;
         height: 7vh;
         padding: 0.3em 0.4em;
+        position: relative;
     }
     
     nav {
         display: none;
         flex-direction: column;
         text-align: center;
-        width: 100vw;
-        height: 100vh;
         position: fixed;
-        background-color: white;
     }
     
     @media only screen and (min-width: 800px) {
