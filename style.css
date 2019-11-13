@@ -163,7 +163,16 @@ p {
     top: 1px;
 }
 
+.Testimonials {
+    display: grid;
+    grid-template-columns: 1fr  4fr 1fr;
+    padding: 20px;
+}
 
+.arrow {
+    position: relative;
+    width: 10vw;
+}
 
 /***********/
 /* Content */
