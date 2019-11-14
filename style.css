@@ -2,6 +2,8 @@
     margin: 0;
 }
 
+
+
 body {
     background-color: #f7f7f7;
 }
@@ -163,12 +165,21 @@ p {
     top: 1px;
 }
 
-.Testimonials {
-    display: grid;
-    grid-template-columns: 1fr  4fr 1fr;
-    padding: 20px;
+.buttons.buttons_contact a {
+    background: linear-gradient(to bottom, #FF4500 5%, #B73100 100%);
+    border: 1px solid #B73100;
+    background-color: #B73100;
+    box-shadow: inset 0px 1px 0px 0px #B73100;
+
 }
 
+.buttons.buttons_contact a:hover {
+    background: linear-gradient(to bottom, #B73100 5%, #FF4500 100%);
+
+}
+
+
+/*arrow to testimonials*/
 .arrow {
     position: relative;
     width: 10vw;
@@ -245,6 +256,95 @@ p {
 
 }
 
+/****************/
+/* Testimonials */
+/****************/
+
+.Testimonials {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #ccc;
+}
+
+.Testimonials h3 {
+    padding-bottom: 30px;
+    color: orangered;
+}
+
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+
+}
+
+
+
+/***************/
+/* Kategori    */
+/***************/
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+
+.kortTekst {
+    font-size: 1.2em;
+}
+
+.every_bike {
+    margin: 10px;
+    border: 1px solid grey;
+    background-color: white;
+    padding: 0 10px 20px;
+}
+
+
+/***************/
+/* bike        */
+/***************/
+.cykelInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    color: white;
+}
+
+.topImg {
+    padding-bottom: 20px;
+}
+
+.langTekst {
+    padding: 20px 0;
+}
+
+.cykelInfo .pris {
+    padding-bottom: 20px;
+}
+
+.stemningsbillede {
+    padding: 20px 0;
+}
+
+.fordele {
+    padding: 20px 0 40px;
+    list-style: none;
+}
+
+
 /***************/
 /* Google maps */
 /***************/
@@ -274,10 +374,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-bottom: 0.3em;
     margin: auto;
     height: 200px;
+    padding: 20px;
+
 }
+
 
 footer #contact_info {
     display: inline;
@@ -341,6 +443,7 @@ footer #contact_info a {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        align-items: center;
     }
 
     .nav_link {
@@ -359,7 +462,6 @@ footer #contact_info a {
     }
 
     #front_page_splash_n_tekst {
-
         flex-direction: row-reverse;
     }
 
@@ -378,9 +480,9 @@ footer #contact_info a {
 
     }
 
-    .cykelBillede {
-        width: 40vw;
-    }
+    /*.cykelBillede {
+    width: 40vw;
+}*/
 
     .kategorier {
         display: grid;
@@ -388,7 +490,7 @@ footer #contact_info a {
         grid-auto-rows: 1fr 1fr;
         position: relative;
         margin: auto;
-        padding-top: 30px;
+        padding: 30px 0 20px 0;
     }
 
 
@@ -415,6 +517,15 @@ footer #contact_info a {
         padding: 20px 40px;
     }
 
+    .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1000px;
+    }
+
+    .cykelInfo {
+        max-width: 1000px;
+    }
 
     .mapouter {
         height: 100vh;

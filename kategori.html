@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="da">
     <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="author" content="Gruppe 5, hold A">
-	<meta name="keywords" content="bike, gallery, models, customized, koga, city, trekking, mountain, race, el, cykel, danmark, denmark, scandinavia">
-	<meta name="description" content="site for cykel leverandør i danmark">
-	<title>Koga cykel kategori</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="author" content="Gruppe 5, hold A">
+    <meta name="keywords" content="bike, gallery, models, customized, koga, city, trekking, mountain, race, el, cykel, danmark, denmark, scandinavia">
+    <meta name="description" content="site for cykel leverandør i danmark">
+    <title>Koga cykel kategori</title>
 </head>
 
 <body>
-	<header>
-	</header>
-	<div hidden class="loadedPageContent"></div>
-	<h1 class="kategoriNavn"></h1>
-	<main>
-		<section class="list"></section>
-	</main>
-	<template>
-		<article>
-			<h2 class="title"></h2>
-			<img class="cykelBillede" src="" alt="">
-			<p class="kortTekst"></p>
-			<p class="pris"></p>
-		</article>
-	</template>
-	<footer></footer>
-	<script src="listView.js"></script>
-	<script src="contentLoad.js"></script>
+    <header>
+    </header>
+    <section class="category">
+        <div hidden class="loadedPageContent"></div>
+        <h1 class="kategoriNavn"></h1>
+        <main>
+            <section class="list"></section>
+        </main>
+        <template>
+            <article class="every_bike">
+                <h2 class="title"></h2>
+                <img class="cykelBillede" src="" alt="">
+                <p class="kortTekst"></p>
+                <p class="pris"></p>
+                <div class="buttons buttons_contact">
+                    <a href="kontakt.html">Kom og prøv cyklen</a>
+                </div>
+                <div class="buttons single_bike">
+                    <a href="#">Jeg har brug for at vide bare <i>lidt</i> mere</a>
+                </div>
+            </article>
+        </template>
+    </section>
+    <footer></footer>
+    <script src="listView.js"></script>
+    <script src="contentLoad.js"></script>
+
 </body></html>
