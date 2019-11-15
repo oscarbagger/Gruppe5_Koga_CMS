@@ -5,20 +5,17 @@
 
 
 body {
-    background-color: #f7f7f7;
+    background-color: #eee;
 }
 
 main {
     display: grid;
-    margin: 0 5px;
     grid-template-columns: 100%;
-    grid-template-areas:
-        "header"
+    grid-template-areas: "header"
         "main"
         "footer";
-    /* padding: 10px;*/
-    padding-top: 73px;
-    background-color: #0061a7;
+    padding: 73px 0px 0px 0px;
+    background-color: #eee
 }
 
 img {
@@ -84,9 +81,9 @@ section #splash_image {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 55% 0%;
-
-    height: 60vh;
+    height: 40vh;
 }
+
 
 
 /*********************/
@@ -110,14 +107,17 @@ h3 {
     font-size: 2em;
 }
 
+h4 {
+    padding-bottom: 6px;
+}
+
 .innholdstekst {
-    /*  margin: 0.5em;*/
-    padding: 20px;
     font-family: sans-serif;
     font-size: 1.2em;
     text-align: center;
     background-color: black;
     color: white;
+    padding: 20px;
 }
 
 p {
@@ -212,9 +212,9 @@ p {
     text-shadow: 3px 3px 3px black;
 }
 
-/*************/
-/* Signature */
-/*************/
+/*********************/
+/* Signature banner  */
+/*********************/
 
 #signature {
     display: grid;
@@ -264,12 +264,17 @@ p {
     display: flex;
     flex-direction: column;
     padding: 40px;
-    background-color: #ccc;
+    background-color: #eee;
+
 }
 
 .Testimonials h3 {
     padding-bottom: 30px;
-    color: orangered;
+
+}
+
+.Testimonials p {
+    font-size: 1em;
 }
 
 
@@ -320,7 +325,7 @@ p {
     margin: auto;
     margin-bottom: 20px;
     padding: 0 20px;
-    color: white;
+
 }
 
 .topImg {
@@ -346,24 +351,82 @@ p {
 
 
 /***************/
-/* Google maps */
+/* om os    */
 /***************/
+
+.about_text {
+    padding: 0 20px 20px 20px;
+}
+
+.about_text .wp-block-image {
+    margin: 20px auto;
+    width: 80%;
+}
+
+
+/***************/
+/* Kontakt     */
+/***************/
+.contact_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 
 .mapouter {
     position: relative;
-    text-align: left;
-    height: 80vh;
-    width: 100vw;
-    border-style: none;
 }
+
+/*de her to class' findes kun inde i coden i WP kontakt-siden.
+Det er gjort for at kunne style dem ind, hver deres sted i grid'et*/
+.contact_adress {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.contact_text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 20px;
+}
+
+.contact_text h2,
+.contact_adress h2 {
+    text-align: left;
+}
+
+.contact_text p {
+    padding: 0;
+}
+
+
+/***************/
+/* Google maps */
+/***************/
+
+
 
 .gmap_canvas iframe {
     overflow: hidden;
     background: none !important;
-    height: 60vh;
-    width: 80vw;
+    width: 100%;
+    height: 40vh;
     border-style: none;
 }
+
+/***************/
+/* Google maps */
+/***************/
+#signature_image {
+    background-image: url(images/Signature_byg_selv_cykel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 55% 0%;
+    height: 40vh;
+}
+
 
 /**********/
 /* Footer */
@@ -377,6 +440,8 @@ footer {
     margin: auto;
     height: 200px;
     padding: 20px;
+    background-color: black;
+    color: white;
 
 }
 
@@ -388,7 +453,7 @@ footer #contact_info {
 
 footer #contact_info a {
     text-decoration: none;
-    color: darkblue;
+    color: lightblue;
 }
 
 #socialmedia_buttons .some-fb {
@@ -461,9 +526,7 @@ footer #contact_info a {
         width: 40vw;
     }
 
-    #front_page_splash_n_tekst {
-        flex-direction: row-reverse;
-    }
+
 
     #splash_image {
         flex-grow: 1;
@@ -471,18 +534,17 @@ footer #contact_info a {
     }
 
     .innholdstekst {
-        flex-grow: 1;
-        max-width: 400px;
-        min-width: 200px;
         display: flex;
+        position: absolute;
+        width: 450px;
+        min-width: 200px;
+        height: 40vh;
         flex-direction: column;
         justify-content: center;
+        background-color: rgba(0, 0, 0, 0.89);
+        padding: 0px;
 
     }
-
-    /*.cykelBillede {
-    width: 40vw;
-}*/
 
     .kategorier {
         display: grid;
@@ -492,8 +554,6 @@ footer #contact_info a {
         margin: auto;
         padding: 30px 0 20px 0;
     }
-
-
 
     .kategori_img {
         overflow: hidden;
@@ -527,15 +587,56 @@ footer #contact_info a {
         max-width: 1000px;
     }
 
-    .mapouter {
-        height: 100vh;
-        width: 100vw;
+
+    main.about_text {
+        display: block;
+        margin: auto;
+        padding: 20px 200px;
     }
 
-    .gmap_canvas iframe {
-        height: 60vh;
-        width: 70vw;
+    .about_text .wp-block-image {
+        margin: 20px auto;
+        width: 50%;
     }
+
+    .contact_grid {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+
+    }
+
+    .mapouter {
+        position: relative;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .gmap_canvas {
+        margin: 20px;
+    }
+
+
+    /*de her to class' findes kun inde i coden i WP kontakt-siden.
+Det er gjort for at kunne style dem ind, hver deres sted i grid'et*/
+    .contact_adress {
+        grid-column-start: 2;
+        margin: 50px 20px;
+    }
+
+    .contact_text {
+        grid-column-start: 3;
+        margin: 50px 20px;
+    }
+
+    .shop {
+        grid-column-start: 1;
+        grid-column-end: span col4-start;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
 }
 
 @media only screen and (min-width 801px) and (max-width: 1200px) {}
