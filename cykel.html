@@ -10,24 +10,42 @@
 <body>
     <header>
     </header>
-    <main>
+    <section>
+        <div id="bike_image">
+        </div>
+    </section>
+    <main class="bike_main">
+        <div class="back">
+            <a onclick="goBack()">Tilbage</a>
+        </div>
         <section class="cykelInfo">
             <h2 class="title"></h2>
             <img class="topImg" src="" alt="">
-            <p class="langTekst"></p>
-            <p class="pris"></p>
-            <img class="stemningsbillede" src="" alt="">
+            <div class="main_text">
+                <p class="kortTekst"></p>
+                <p class="langTekst"></p>
+            </div>
+            <div class="info">
+                <p class="pris"></p>
+                <div class="buttons buttons_contact">
+                    <a href="kontakt.html">Kom og få en gratis prøvetur</a>
+                </div>
+                <!--<img class="specifikation" src="" alt="">-->
+            </div>
+            <div class="pic_wrapper">
+                <img class="stemningsbillede" src="" alt="">
+            </div>
+        </section>
+        <section class="benefits">
+            <h2 class="sub_heading">Hvorfor vælge denne cykel?</h2>
             <ul class="fordele">
             </ul>
-            <img class="specifikation" src="" alt="">
+
         </section>
-        <div class="buttons buttons_contact">
-            <a href="kontakt.html">Kom og få en gratis prøvetur</a>
-        </div>
     </main>
+
+
     <footer></footer>
     <script src="singleView.js"></script>
     <script src="contentLoad.js"></script>
-</body>
-
-</html>
+</body></html>

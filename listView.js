@@ -64,3 +64,8 @@ function ShowList() {
         }
     })
 }
+
+
+function goBack() {
+    window.history.back();
+}

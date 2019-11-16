@@ -61,3 +61,7 @@ function InsertContent() {
         }
     })
 }
+
+function goBack() {
+    window.history.back();
+}

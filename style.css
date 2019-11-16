@@ -14,7 +14,7 @@ main {
     grid-template-areas: "header"
         "main"
         "footer";
-    padding: 73px 0px 0px 0px;
+    padding: 60px 0px 0px 0px;
     background-color: #eee
 }
 
@@ -81,7 +81,7 @@ section #splash_image {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 55% 0%;
-    height: 40vh;
+    height: 50vh;
 }
 
 
@@ -97,6 +97,7 @@ h1 {
 
 h2 {
     font-family: sans-serif;
+    font-size: 3em;
     text-align: center;
     padding-bottom: 1em;
     padding-top: 1em;
@@ -111,6 +112,15 @@ h4 {
     padding-bottom: 6px;
 }
 
+
+.contact_grid h3 {
+    text-align: left;
+}
+
+
+/******************/
+/* frontpage text */
+/******************/
 .innholdstekst {
     font-family: sans-serif;
     font-size: 1.2em;
@@ -122,7 +132,7 @@ h4 {
 
 p {
     font-family: sans-serif;
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 0.5em;
     letter-spacing: 2px;
     /* denne bør endres */
@@ -183,6 +193,31 @@ p {
 .arrow {
     position: relative;
     width: 10vw;
+}
+
+.back {
+    padding: 0 0 0 110px;
+}
+
+.back a {
+    text-decoration: none;
+    box-shadow: inset 0px 1px 0px 0px #54a3f7;
+    background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    background-color: #007dc1;
+    border-radius: 3px;
+    border: 1px solid #124d77;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 1.3em;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #154682;
+}
+
+.back.about_back {
+    padding: 40px 100px 0;
 }
 
 /***********/
@@ -317,41 +352,45 @@ p {
 /***************/
 /* bike        */
 /***************/
-.cykelInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
-    padding: 0 20px;
 
+
+#bike_image {
+    background-image: url(images/splash_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 55% 0%;
+    height: 60vh;
 }
 
-.topImg {
-    padding-bottom: 20px;
+.bike_main {
+    padding: 40px 0 0 0;
 }
 
-.langTekst {
-    padding: 20px 0;
+
+.main_text {
+    padding: 20px;
 }
 
-.cykelInfo .pris {
-    padding-bottom: 20px;
+.info .pris {
+    height: 20px;
+    background-color: #0061a7;
 }
 
-.stemningsbillede {
-    padding: 20px 0;
+/*****************/
+/* signature page*/
+/*****************/
+#signature_image {
+    background-image: url(images/Signature_byg_selv_cykel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 55% 0%;
+    height: 40vh;
 }
 
-.fordele {
-    padding: 20px 0 40px;
-    list-style: none;
-}
 
 
 /***************/
-/* om os    */
+/* om os       */
 /***************/
 
 .about_text {
@@ -370,6 +409,7 @@ p {
 .contact_grid {
     display: grid;
     grid-template-columns: 1fr;
+    padding-top: 100px;
 }
 
 
@@ -416,16 +456,6 @@ Det er gjort for at kunne style dem ind, hver deres sted i grid'et*/
     border-style: none;
 }
 
-/***************/
-/* Google maps */
-/***************/
-#signature_image {
-    background-image: url(images/Signature_byg_selv_cykel.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 55% 0%;
-    height: 40vh;
-}
 
 
 /**********/
@@ -489,15 +519,21 @@ footer #contact_info a {
     background-image: url(images/iconmonstr-youtube-8-240.png);
 }
 
-/*****************/
-/* Responsivitet */
-/*****************/
+/****************************************************************************************/
+/****************************************************************************************/
+/********                        Responsivitet                                    *******/
+/****************************************************************************************/
+/****************************************************************************************/
 
 @media only screen and (min-width: 400px) {}
 
 @media only screen and (min-width: 500px) {}
 
 @media only screen and (min-width: 800px) {
+
+    /**************/
+    /* web nav    */
+    /**************/
 
     #logo img {
         width: 25em;
@@ -526,19 +562,24 @@ footer #contact_info a {
         width: 40vw;
     }
 
-
-
     #splash_image {
         flex-grow: 1;
         min-width: 450px;
     }
+
+
+
+
+    /**********************/
+    /* web frontpage      */
+    /**********************/
 
     .innholdstekst {
         display: flex;
         position: absolute;
         width: 450px;
         min-width: 200px;
-        height: 40vh;
+        height: 50vh;
         flex-direction: column;
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.89);
@@ -565,28 +606,154 @@ footer #contact_info a {
         transition: transform .3s ease;
     }
 
+
+
+    /*************************/
+    /* web Signature banner  */
+    /*************************/
     #signature {
         display: grid;
         grid-template-columns: 1fr 1fr;
         background-color: black;
         margin: 30px auto 0 auto;
-
     }
 
     .signature_text {
         padding: 20px 40px;
     }
 
+
+
+    /*******************/
+    /* web Kategori    */
+    /*******************/
+
+
+
     .list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        max-width: 1000px;
+        padding: 20px 100px 20px;
     }
+
+
+
+    /***************/
+    /* web bike    */
+    /***************/
+
+
+    /*overall grid*/
 
     .cykelInfo {
-        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas:
+            "header header header"
+            ". product ."
+            "main main main"
+            "pic pic info"
+            "subheader subheader subheader";
+        background-color: white;
+        margin: 20px 100px 20px;
     }
 
+
+    /* placement for grid items for overall grid*/
+
+    .cykelInfo .title {
+        grid-area: header;
+        background-color: white;
+    }
+
+    .cykelInfo .topImg {
+        grid-area: product;
+        padding: 0;
+        background-color: white;
+    }
+
+    .cykelInfo .pic_wrapper {
+        grid-area: pic;
+        align-content: center;
+        padding: 0;
+
+    }
+
+    .cykelInfo .main_text {
+        grid-area: main;
+        padding: 50px;
+        background-color: white;
+    }
+
+    .cykelInfo .info {
+        grid-area: info;
+        padding: 50px;
+        background-color: white;
+    }
+
+    .cykelInfo .sub_heading {
+        grid-area: subheader;
+        background-color: white;
+
+    }
+
+    .benefits {
+        background-color: white;
+    }
+
+
+    /*grid for text*/
+
+    .main_text {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas:
+            "kort"
+            "lang";
+    }
+
+
+    /*placement for grid items in text grid */
+
+    .main_text .kortTekst {
+        grid-area: kort;
+    }
+
+    .main_text .langTekst {
+        grid-area: lang;
+    }
+
+
+
+    /*grid for info and button*/
+
+    .info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas:
+            "pris"
+            "button";
+    }
+
+
+    /*placement for grid items in info grid */
+
+    .info .pris {
+        grid-area: pris;
+    }
+
+    .info .buttons_contact {
+        grid-area: button;
+    }
+
+
+
+    /***************/
+    /* web om os    */
+    /***************/
 
     main.about_text {
         display: block;
@@ -599,10 +766,18 @@ footer #contact_info a {
         width: 50%;
     }
 
+
+
+    /*******************/
+    /* web Kontakt     */
+    /*******************/
+
+    /*a grid in 1/3 fractions*/
+    /*map, adress, text*/
+
     .contact_grid {
         display: grid;
         grid-template-columns: 33% 33% 33%;
-
     }
 
     .mapouter {
@@ -630,6 +805,7 @@ Det er gjort for at kunne style dem ind, hver deres sted i grid'et*/
         margin: 50px 20px;
     }
 
+    /*billedet af butikken*/
     .shop {
         grid-column-start: 1;
         grid-column-end: span col4-start;
