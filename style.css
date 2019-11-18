@@ -1,26 +1,26 @@
 * {
-    margin: 0;
+	margin: 0;
 }
 
 
 
 body {
-    background-color: #eee;
+	background-color: #eee;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas: "header"
-        "main"
-        "footer";
-    padding: 60px 0px 0px 0px;
-    background-color: #eee
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-areas: "header"
+		"main"
+		"footer";
+	padding: 60px 0px 0px 0px;
+	background-color: #eee
 }
 
 img {
-    width: 100%;
-    display: block;
+	width: 100%;
+	display: block;
 }
 
 /**********/
@@ -28,10 +28,10 @@ img {
 /**********/
 
 #logo img {
-    width: 40%;
-    height: 7vh;
-    padding: 0.3em 0.4em;
-    cursor: pointer;
+	width: 40%;
+	height: 7vh;
+	padding: 0.3em 0.4em;
+	cursor: pointer;
 }
 
 /***********************/
@@ -39,32 +39,32 @@ img {
 /***********************/
 
 nav {
-    display: block;
-    text-align: right;
-    padding-right: 1em;
-    font-size: 1.2em;
+	display: block;
+	text-align: right;
+	padding-right: 1em;
+	font-size: 1.2em;
 }
 
 .nav_link {
-    color: black;
-    list-style-type: none;
-    text-decoration: none;
-    width: 100%;
-    padding: 0.3em;
-    flex-wrap: wrap;
-    flex-direction: column;
-    display: block;
-    font-family: sans-serif;
-    cursor: pointer;
+	color: black;
+	list-style-type: none;
+	text-decoration: none;
+	width: 100%;
+	padding: 0.3em;
+	flex-wrap: wrap;
+	flex-direction: column;
+	display: block;
+	font-family: sans-serif;
+	cursor: pointer;
 }
 
 .nav_link:hover {
-    color: #0e7dc7;
-    text-decoration: underline;
+	color: #0e7dc7;
+	text-decoration: underline;
 }
 
 p a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 /****************/
@@ -72,16 +72,16 @@ p a {
 /****************/
 
 #front_page_splash_n_tekst {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 section #splash_image {
-    background-image: url(images/splash_image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 55% 0%;
-    height: 50vh;
+	background-image: url(images/splash_image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 55% 0%;
+	height: 50vh;
 }
 
 
@@ -91,30 +91,30 @@ section #splash_image {
 /*********************/
 
 h1 {
-    font-family: sans-serif;
-    text-align: center;
+	font-family: sans-serif;
+	text-align: center;
 }
 
 h2 {
-    font-family: sans-serif;
-    font-size: 3em;
-    text-align: center;
-    padding-bottom: 1em;
-    padding-top: 1em;
+	font-family: sans-serif;
+	font-size: 3em;
+	text-align: center;
+	padding-bottom: 1em;
+	padding-top: 1em;
 }
 
 h3 {
-    text-align: center;
-    font-size: 2em;
+	text-align: center;
+	font-size: 2em;
 }
 
 h4 {
-    padding-bottom: 6px;
+	padding-bottom: 6px;
 }
 
 
 .contact_grid h3 {
-    text-align: left;
+	text-align: left;
 }
 
 
@@ -122,20 +122,20 @@ h4 {
 /* frontpage text */
 /******************/
 .innholdstekst {
-    font-family: sans-serif;
-    font-size: 1.2em;
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 20px;
+	font-family: sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 20px;
 }
 
 p {
-    font-family: sans-serif;
-    font-size: 1em;
-    padding: 0.5em;
-    letter-spacing: 2px;
-    /* denne bør endres */
+	font-family: sans-serif;
+	font-size: 1em;
+	padding: 0.5em;
+	letter-spacing: 2px;
+	/* denne bør endres */
 }
 
 /******************/
@@ -143,81 +143,81 @@ p {
 /******************/
 
 .buttons {
-    text-align: center;
-    padding-bottom: 1em;
-    padding-top: 1em;
+	text-align: center;
+	padding-bottom: 1em;
+	padding-top: 1em;
 }
 
 .buttons a {
-    text-decoration: none;
-    box-shadow: inset 0px 1px 0px 0px #54a3f7;
-    background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
-    background-color: #007dc1;
-    border-radius: 3px;
-    border: 1px solid #124d77;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 1.3em;
-    padding: 6px 24px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #154682;
+	text-decoration: none;
+	box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color: #007dc1;
+	border-radius: 3px;
+	border: 1px solid #124d77;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 1.3em;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #154682;
 }
 
 .buttons a:hover {
-    background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
-    background-color: #0061a7;
+	background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color: #0061a7;
 }
 
 .buttons a:active {
-    position: relative;
-    top: 1px;
+	position: relative;
+	top: 1px;
 }
 
 .buttons.buttons_contact a {
-    background: linear-gradient(to bottom, #FF4500 5%, #B73100 100%);
-    border: 1px solid #B73100;
-    background-color: #B73100;
-    box-shadow: inset 0px 1px 0px 0px #B73100;
+	background: linear-gradient(to bottom, #FF4500 5%, #B73100 100%);
+	border: 1px solid #B73100;
+	background-color: #B73100;
+	box-shadow: inset 0px 1px 0px 0px #B73100;
 
 }
 
 .buttons.buttons_contact a:hover {
-    background: linear-gradient(to bottom, #B73100 5%, #FF4500 100%);
+	background: linear-gradient(to bottom, #B73100 5%, #FF4500 100%);
 
 }
 
 
 /*arrow to testimonials*/
 .arrow {
-    position: relative;
-    width: 10vw;
+	position: relative;
+	width: 10vw;
 }
 
 .back {
-    padding: 0 0 0 110px;
+	padding: 0 0 0 110px;
 }
 
 .back a {
-    text-decoration: none;
-    box-shadow: inset 0px 1px 0px 0px #54a3f7;
-    background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
-    background-color: #007dc1;
-    border-radius: 3px;
-    border: 1px solid #124d77;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 1.3em;
-    padding: 6px 24px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #154682;
+	text-decoration: none;
+	box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color: #007dc1;
+	border-radius: 3px;
+	border: 1px solid #124d77;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 1.3em;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #154682;
 }
 
 .back.about_back {
-    padding: 40px 100px 0;
+	padding: 40px 100px 0;
 }
 
 /***********/
@@ -225,26 +225,26 @@ p {
 /***********/
 
 .kategorier {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 1fr 1fr 1fr 1fr;
-    margin: auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: 1fr 1fr 1fr 1fr;
+	margin: auto;
 }
 
 .kategori_img {
-    position: relative;
+	position: relative;
 
 }
 
 .kategorier p {
-    position: absolute;
-    z-index: 5;
-    color: white;
-    font-weight: 600;
-    font-family: sans-serif;
-    font-size: 2em;
-    bottom: 0;
-    text-shadow: 3px 3px 3px black;
+	position: absolute;
+	z-index: 5;
+	color: white;
+	font-weight: 600;
+	font-family: sans-serif;
+	font-size: 2em;
+	bottom: 0;
+	text-shadow: 3px 3px 3px black;
 }
 
 /*********************/
@@ -252,20 +252,20 @@ p {
 /*********************/
 
 #signature {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 1fr;
-    background-color: black;
-    margin: auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: 1fr;
+	background-color: black;
+	margin: auto;
 }
 
 .signature_text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	color: white;
+	padding: 20px;
 
 }
 
@@ -275,19 +275,19 @@ p {
 /***********/
 
 #banner {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 1.5em;
-    background-color: skyblue;
-    padding: 20px 100px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 1.5em;
+	background-color: skyblue;
+	padding: 20px 100px;
 }
 
 .koga_story_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10px;
-    padding: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 10px;
+	padding: 20px;
 
 }
 
@@ -296,28 +296,28 @@ p {
 /****************/
 
 .Testimonials {
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    background-color: #eee;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	background-color: #eee;
 
 }
 
 .Testimonials h3 {
-    padding-bottom: 30px;
+	padding-bottom: 30px;
 
 }
 
 .Testimonials p {
-    font-size: 1em;
+	font-size: 1em;
 }
 
 
 .slider {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    text-align: center;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	text-align: center;
 
 }
 
@@ -328,24 +328,24 @@ p {
 /***************/
 
 .list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 20px;
 
 }
 
 .kortTekst {
-    font-size: 1.2em;
+	font-size: 1.2em;
 }
 
 .every_bike {
-    margin: 10px;
-    border: 1px solid grey;
-    background-color: white;
-    padding: 0 10px 20px;
+	margin: 10px;
+	border: 1px solid grey;
+	background-color: white;
+	padding: 0 10px 20px;
 }
 
 
@@ -355,36 +355,36 @@ p {
 
 
 #bike_image {
-    background-image: url(images/splash_image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 55% 0%;
-    height: 60vh;
+	background-image: url(images/splash_image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 55% 0%;
+	height: 60vh;
 }
 
 .bike_main {
-    padding: 40px 0 0 0;
+	padding: 40px 0 0 0;
 }
 
 
 .main_text {
-    padding: 20px;
+	padding: 20px;
 }
 
 .info .pris {
-    height: 20px;
-    background-color: #0061a7;
+	height: 20px;
+	background-color: #0061a7;
 }
 
 /*****************/
 /* signature page*/
 /*****************/
 #signature_image {
-    background-image: url(images/Signature_byg_selv_cykel.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 55% 0%;
-    height: 40vh;
+	background-image: url(images/Signature_byg_selv_cykel.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 55% 0%;
+	height: 40vh;
 }
 
 
@@ -394,12 +394,12 @@ p {
 /***************/
 
 .about_text {
-    padding: 0 20px 20px 20px;
+	padding: 0 20px 20px 20px;
 }
 
 .about_text .wp-block-image {
-    margin: 20px auto;
-    width: 80%;
+	margin: 20px auto;
+	width: 80%;
 }
 
 
@@ -407,38 +407,38 @@ p {
 /* Kontakt     */
 /***************/
 .contact_grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-top: 100px;
+	display: grid;
+	grid-template-columns: 1fr;
+	padding-top: 100px;
 }
 
 
 .mapouter {
-    position: relative;
+	position: relative;
 }
 
 /*de her to class' findes kun inde i coden i WP kontakt-siden.
 Det er gjort for at kunne style dem ind, hver deres sted i grid'et*/
 .contact_adress {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
 }
 
 .contact_text {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin: 20px;
 }
 
 .contact_text h2,
 .contact_adress h2 {
-    text-align: left;
+	text-align: left;
 }
 
 .contact_text p {
-    padding: 0;
+	padding: 0;
 }
 
 
@@ -449,11 +449,11 @@ Det er gjort for at kunne style dem ind, hver deres sted i grid'et*/
 
 
 .gmap_canvas iframe {
-    overflow: hidden;
-    background: none !important;
-    width: 100%;
-    height: 40vh;
-    border-style: none;
+	overflow: hidden;
+	background: none !important;
+	width: 100%;
+	height: 40vh;
+	border-style: none;
 }
 
 
@@ -463,60 +463,71 @@ Det er gjort for at kunne style dem ind, hver deres sted i grid'et*/
 /**********/
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    height: 200px;
-    padding: 20px;
-    background-color: black;
-    color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin: auto;
+	height: 200px;
+	padding: 20px;
+	background-color: black;
+	color: white;
 
 }
 
 
 footer #contact_info {
-    display: inline;
-    text-align: center;
+	display: inline;
+	text-align: center;
 }
 
 footer #contact_info a {
-    text-decoration: none;
-    color: lightblue;
+	text-decoration: none;
+	color: lightblue;
 }
 
 #socialmedia_buttons .some-fb {
-    display: inline-block;
-    padding: 0em 0.5em;
-    width: 35px;
-    height: 45px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url(images/iconmonstr-facebook-3-240.png);
+	display: inline-block;
+	padding: 0em 0.5em;
+	width: 35px;
+	height: 45px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(images/iconmonstr-facebook-3-240.png);
 }
 
 #socialmedia_buttons .some-tw {
-    display: inline-block;
-    padding: 0em 0.5em;
-    width: 35px;
-    height: 45px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url(images/iconmonstr-twitter-3-240.png);
+	display: inline-block;
+	padding: 0em 0.5em;
+	width: 35px;
+	height: 45px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(images/iconmonstr-twitter-3-240.png);
 }
 
 #socialmedia_buttons .some-yt {
-    display: inline-block;
-    padding: 0em 0.5em;
-    width: 35px;
-    height: 45px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url(images/iconmonstr-youtube-8-240.png);
+	display: inline-block;
+	padding: 0em 0.5em;
+	width: 35px;
+	height: 45px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(images/iconmonstr-youtube-8-240.png);
+}
+
+#socialmedia_buttons .some-insta {
+	display: inline-block;
+	padding: 0em 0.5em;
+	width: 35px;
+	height: 45px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(images/instagram.png);
 }
 
 /****************************************************************************************/
@@ -531,287 +542,287 @@ footer #contact_info a {
 
 @media only screen and (min-width: 800px) {
 
-    /**************/
-    /* web nav    */
-    /**************/
-
-    #logo img {
-        width: 25em;
-        height: auto;
-    }
+	/**************/
+	/* web nav    */
+	/**************/
+
+	#logo img {
+		width: 25em;
+		height: auto;
+	}
 
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-    }
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+	}
 
-    .nav_link {
-        width: auto;
-        margin-right: 1em;
-        font-size: 1.1em;
-        font-weight: 500;
-    }
+	.nav_link {
+		width: auto;
+		margin-right: 1em;
+		font-size: 1.1em;
+		font-weight: 500;
+	}
 
-    .nav_link:last-child {
-        margin-right: 0;
-    }
-
-    .wp-block-image {
-        width: 40vw;
-    }
+	.nav_link:last-child {
+		margin-right: 0;
+	}
+
+	.wp-block-image {
+		width: 40vw;
+	}
 
-    #splash_image {
-        flex-grow: 1;
-        min-width: 450px;
-    }
+	#splash_image {
+		flex-grow: 1;
+		min-width: 450px;
+	}
 
 
 
 
-    /**********************/
-    /* web frontpage      */
-    /**********************/
+	/**********************/
+	/* web frontpage      */
+	/**********************/
 
-    .innholdstekst {
-        display: flex;
-        position: absolute;
-        width: 450px;
-        min-width: 200px;
-        height: 50vh;
-        flex-direction: column;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0.89);
-        padding: 0px;
-
-    }
+	.innholdstekst {
+		display: flex;
+		position: absolute;
+		width: 450px;
+		min-width: 200px;
+		height: 50vh;
+		flex-direction: column;
+		justify-content: center;
+		background-color: rgba(0, 0, 0, 0.89);
+		padding: 0px;
+
+	}
 
-    .kategorier {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 1fr 1fr;
-        position: relative;
-        margin: auto;
-        padding: 30px 0 20px 0;
-    }
-
-    .kategori_img {
-        overflow: hidden;
-    }
+	.kategorier {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-auto-rows: 1fr 1fr;
+		position: relative;
+		margin: auto;
+		padding: 30px 0 20px 0;
+	}
+
+	.kategori_img {
+		overflow: hidden;
+	}
 
-    .kategori_img img:hover {
-        filter: grayscale(.7);
-        transform: scale(1.05);
-        transition: transform .3s ease;
-    }
+	.kategori_img img:hover {
+		filter: grayscale(.7);
+		transform: scale(1.05);
+		transition: transform .3s ease;
+	}
 
 
 
-    /*************************/
-    /* web Signature banner  */
-    /*************************/
-    #signature {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: black;
-        margin: 30px auto 0 auto;
-    }
+	/*************************/
+	/* web Signature banner  */
+	/*************************/
+	#signature {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		background-color: black;
+		margin: 30px auto 0 auto;
+	}
 
-    .signature_text {
-        padding: 20px 40px;
-    }
+	.signature_text {
+		padding: 20px 40px;
+	}
 
 
 
-    /*******************/
-    /* web Kategori    */
-    /*******************/
+	/*******************/
+	/* web Kategori    */
+	/*******************/
 
 
 
-    .list {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 20px 100px 20px;
-    }
+	.list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		padding: 20px 100px 20px;
+	}
 
 
 
-    /***************/
-    /* web bike    */
-    /***************/
+	/***************/
+	/* web bike    */
+	/***************/
 
 
-    /*overall grid*/
+	/*overall grid*/
 
-    .cykelInfo {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: auto;
-        grid-template-areas:
-            "header header header"
-            ". product ."
-            "main main main"
-            "pic pic info"
-            "subheader subheader subheader";
-        background-color: white;
-        margin: 20px 100px 20px;
-    }
+	.cykelInfo {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-auto-rows: auto;
+		grid-template-areas:
+			"header header header"
+			". product ."
+			"main main main"
+			"pic pic info"
+			"subheader subheader subheader";
+		background-color: white;
+		margin: 20px 100px 20px;
+	}
 
 
-    /* placement for grid items for overall grid*/
+	/* placement for grid items for overall grid*/
 
-    .cykelInfo .title {
-        grid-area: header;
-        background-color: white;
-    }
+	.cykelInfo .title {
+		grid-area: header;
+		background-color: white;
+	}
 
-    .cykelInfo .topImg {
-        grid-area: product;
-        padding: 0;
-        background-color: white;
-    }
+	.cykelInfo .topImg {
+		grid-area: product;
+		padding: 0;
+		background-color: white;
+	}
 
-    .cykelInfo .pic_wrapper {
-        grid-area: pic;
-        align-content: center;
-        padding: 0;
+	.cykelInfo .pic_wrapper {
+		grid-area: pic;
+		align-content: center;
+		padding: 0;
 
-    }
+	}
 
-    .cykelInfo .main_text {
-        grid-area: main;
-        padding: 50px;
-        background-color: white;
-    }
+	.cykelInfo .main_text {
+		grid-area: main;
+		padding: 50px;
+		background-color: white;
+	}
 
-    .cykelInfo .info {
-        grid-area: info;
-        padding: 50px;
-        background-color: white;
-    }
+	.cykelInfo .info {
+		grid-area: info;
+		padding: 50px;
+		background-color: white;
+	}
 
-    .cykelInfo .sub_heading {
-        grid-area: subheader;
-        background-color: white;
+	.cykelInfo .sub_heading {
+		grid-area: subheader;
+		background-color: white;
 
-    }
+	}
 
-    .benefits {
-        background-color: white;
-    }
+	.benefits {
+		background-color: white;
+	}
 
 
-    /*grid for text*/
+	/*grid for text*/
 
-    .main_text {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
-        grid-template-areas:
-            "kort"
-            "lang";
-    }
+	.main_text {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-auto-rows: auto;
+		grid-template-areas:
+			"kort"
+			"lang";
+	}
 
 
-    /*placement for grid items in text grid */
+	/*placement for grid items in text grid */
 
-    .main_text .kortTekst {
-        grid-area: kort;
-    }
+	.main_text .kortTekst {
+		grid-area: kort;
+	}
 
-    .main_text .langTekst {
-        grid-area: lang;
-    }
+	.main_text .langTekst {
+		grid-area: lang;
+	}
 
 
 
-    /*grid for info and button*/
+	/*grid for info and button*/
 
-    .info {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
-        grid-template-areas:
-            "pris"
-            "button";
-    }
+	.info {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-auto-rows: auto;
+		grid-template-areas:
+			"pris"
+			"button";
+	}
 
 
-    /*placement for grid items in info grid */
+	/*placement for grid items in info grid */
 
-    .info .pris {
-        grid-area: pris;
-    }
+	.info .pris {
+		grid-area: pris;
+	}
 
-    .info .buttons_contact {
-        grid-area: button;
-    }
+	.info .buttons_contact {
+		grid-area: button;
+	}
 
 
 
-    /***************/
-    /* web om os    */
-    /***************/
+	/***************/
+	/* web om os    */
+	/***************/
 
-    main.about_text {
-        display: block;
-        margin: auto;
-        padding: 20px 200px;
-    }
+	main.about_text {
+		display: block;
+		margin: auto;
+		padding: 20px 200px;
+	}
 
-    .about_text .wp-block-image {
-        margin: 20px auto;
-        width: 50%;
-    }
+	.about_text .wp-block-image {
+		margin: 20px auto;
+		width: 50%;
+	}
 
 
 
-    /*******************/
-    /* web Kontakt     */
-    /*******************/
+	/*******************/
+	/* web Kontakt     */
+	/*******************/
 
-    /*a grid in 1/3 fractions*/
-    /*map, adress, text*/
+	/*a grid in 1/3 fractions*/
+	/*map, adress, text*/
 
-    .contact_grid {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-    }
+	.contact_grid {
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+	}
 
-    .mapouter {
-        position: relative;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 1;
-    }
+	.mapouter {
+		position: relative;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 1;
+	}
 
-    .gmap_canvas {
-        margin: 20px;
-    }
+	.gmap_canvas {
+		margin: 20px;
+	}
 
 
-    /*de her to class' findes kun inde i coden i WP kontakt-siden.
+	/*de her to class' findes kun inde i coden i WP kontakt-siden.
 Det er gjort for at kunne style dem ind, hver deres sted i grid'et*/
-    .contact_adress {
-        grid-column-start: 2;
-        margin: 50px 20px;
-    }
+	.contact_adress {
+		grid-column-start: 2;
+		margin: 50px 20px;
+	}
 
-    .contact_text {
-        grid-column-start: 3;
-        margin: 50px 20px;
-    }
+	.contact_text {
+		grid-column-start: 3;
+		margin: 50px 20px;
+	}
 
-    /*billedet af butikken*/
-    .shop {
-        grid-column-start: 1;
-        grid-column-end: span col4-start;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
+	/*billedet af butikken*/
+	.shop {
+		grid-column-start: 1;
+		grid-column-end: span col4-start;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
 
 }
 
