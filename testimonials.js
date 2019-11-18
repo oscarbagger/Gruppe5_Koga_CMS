@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", Start);
 
 let currentIndex = 0;
-let testimanial_text = [];
+let testimonial_text = [];
 const url = "https://oscarbagger.dk/kea/Gruppe5_Koga_CMS/wordpress/wp-json/wp/v2/anbefaling/?&per_page=99";
 
 

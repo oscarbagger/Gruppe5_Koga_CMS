@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", Start);
 
-let kategori = [];
+let kategoriArray = [];
 let urlParams = new URLSearchParams(window.location.search);
 let kategoriID = urlParams.get("id");
 let kategoriUrl = "https://oscarbagger.dk/kea/Gruppe5_Koga_CMS/wordpress/wp-json/wp/v2/kategori?include[]=" + kategoriID;
@@ -13,36 +13,15 @@ const temp = document.querySelector("template");
 const list = document.querySelector(".list");
 
 
-let myCategory = urlParams.get("kategori");
-console.log(myCategory);
 
 function Start() {
     kategoriGetJson();
 }
 
-function TextToLoad() {
-    let txt = "";
-    switch (myCategory) {
-        case "E-bike":
-            txt = "e-bikes";
-            break;
-        case "Trekking":
-            txt = "trekking";
-            break;
-        case "City":
-            txt = "city-touring";
-            break;
-        case "Race":
-            txt = "race";
-            break;
-    }
-}
-
 async function kategoriGetJson() {
     const response = await fetch(kategoriUrl);
-    kategori = await response.json();
-    kategori = kategori[0];
-    console.log(kategori);
+    kategoriArray = await response.json();
+    kategoriArray = kategoriArray[0];
     showKategori();
 }
 
@@ -53,8 +32,8 @@ async function GetJson() {
 }
 
 function showKategori() {
-    kategoriIndhold.innerHTML = kategori.content.rendered;
-    myCategory = kategori.title.rendered;
+    kategoriIndhold.innerHTML = kategoriArray.content.rendered;
+    myCategory = kategoriArray.title.rendered;
     GetJson();
 }
 
@@ -68,11 +47,11 @@ function ShowList() {
             clone.querySelector(".kortTekst").textContent = cykel.kort_tekst;
             clone.querySelector(".pris").textContent = "Pris: " + cykel.pris + " kr";
             list.appendChild(clone);
-            // eventlistener to go to singleview
-            list.lastElementChild.addEventListener("click", () => {
+            // eventlistener to go to singleview    
+            /* list.lastElementChild.addEventListener("click", () => {
                 location.href = "cykel.html?id=" + cykel.id;
-            });
-            list.querySelector(".single_bike").addEventListener("click", () => {
+            }); */
+            list.lastElementChild.querySelector(".single_bike").addEventListener("click", () => {
                 location.href = "cykel.html?id=" + cykel.id;
             });
         }
