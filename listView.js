@@ -11,6 +11,7 @@ let kategoriID = urlParams.get("id");
 let kategoriUrl = "https://oscarbagger.dk/kea/Gruppe5_Koga_CMS/wordpress/wp-json/wp/v2/kategori?include[]=" + kategoriID;
 let kategoriIndhold = document.querySelector(".kategoriIndhold");
 
+const title=document.querySelector("title");
 
 function Start() {
     kategoriGetJson();
@@ -26,6 +27,7 @@ async function kategoriGetJson() {
 function showKategori() {
     kategoriIndhold.innerHTML = kategoriArray.content.rendered;
     myCategory = kategoriArray.title.rendered;
+    title.textContent=kategoriArray.title.rendered;
     cyklerGetJson();
 }
 

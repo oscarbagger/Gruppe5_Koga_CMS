@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", Start);
 let urlParams = new URLSearchParams(window.location.search);
 let myID = urlParams.get("id");
 let url = "https://oscarbagger.dk/kea/Gruppe5_Koga_CMS/wordpress/wp-json/wp/v2/cykel?include[]=" + myID;
-
+const title=document.querySelector("title");
 console.log(myID);
 
 const cykelInfo = document.querySelector(".cykelInfo");
@@ -21,6 +21,7 @@ async function GetJson() {
     cykel = await response.json();
     cykel = cykel[0];
     console.log(cykel);
+    title.textContent=cykel.title.rendered;
     showBike();
 }
 
