@@ -197,6 +197,9 @@ p {
 	position: relative;
 	width: 10vw;
 }
+.arrow:hover {
+    cursor: pointer;
+}
 
 .back {
 	padding: 30px 0px 0px 20px;
@@ -383,7 +386,6 @@ p {
 
 .info .pris {
 	height: 20px;
-	background-color: #0061a7;
 }
 
 /*****************/
@@ -627,6 +629,7 @@ footer #contact_info a {
 		filter: grayscale(.7);
 		transform: scale(1.05);
 		transition: transform .3s ease;
+        cursor: pointer;
 	}
 
 
@@ -645,13 +648,9 @@ footer #contact_info a {
 		padding: 20px 40px;
 	}
 
-
-
 	/*******************/
 	/* web Kategori    */
 	/*******************/
-
-
 
 	.list {
 		display: grid;
@@ -659,12 +658,9 @@ footer #contact_info a {
 		padding: 20px 100px 20px;
 	}
 
-
-
 	/***************/
 	/* web bike    */
 	/***************/
-
 
 	/*overall grid*/
 
