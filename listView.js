@@ -1,21 +1,23 @@
 window.addEventListener("DOMContentLoaded", Start);
 
+let kategori = [];
+let urlParams = new URLSearchParams(window.location.search);
+let kategoriID = urlParams.get("id");
+let kategoriUrl = "https://oscarbagger.dk/kea/Gruppe5_Koga_CMS/wordpress/wp-json/wp/v2/kategori?include[]=" + kategoriID;
+let kategoriIndhold = document.querySelector(".kategoriIndhold");
+
+
 let cykler = [];
 const url = "https://oscarbagger.dk/kea/Gruppe5_Koga_CMS/wordpress/wp-json/wp/v2/cykel/?&per_page=99";
 const temp = document.querySelector("template");
 const list = document.querySelector(".list");
-const kategoriNavn = document.querySelector(".kategoriNavn");
 
-const loadedContentRef = document.querySelector(".loadedPageContent");
 
-let urlParams = new URLSearchParams(window.location.search);
 let myCategory = urlParams.get("kategori");
 console.log(myCategory);
 
 function Start() {
-    kategoriNavn.textContent = myCategory;
-    //TextToLoad();
-    GetJson();
+    kategoriGetJson();
 }
 
 function TextToLoad() {
@@ -34,14 +36,26 @@ function TextToLoad() {
             txt = "race";
             break;
     }
-    loadedContentRef.textContent = txt;
 }
 
+async function kategoriGetJson() {
+    const response = await fetch(kategoriUrl);
+    kategori = await response.json();
+    kategori = kategori[0];
+    console.log(kategori);
+    showKategori();
+}
 
 async function GetJson() {
     const response = await fetch(url);
     cykler = await response.json();
     ShowList();
+}
+
+function showKategori() {
+    kategoriIndhold.innerHTML = kategori.content.rendered;
+    myCategory = kategori.title.rendered;
+    GetJson();
 }
 
 function ShowList() {

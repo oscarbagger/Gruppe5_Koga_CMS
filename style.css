@@ -96,6 +96,19 @@ h1 {
 }
 
 h2 {
+<<<<<<< HEAD
+<<<<<<< HEAD
+    font-family: sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+=======
 	font-family: sans-serif;
 	font-size: 3em;
 	text-align: center;
@@ -106,6 +119,19 @@ h2 {
 h3 {
 	text-align: center;
 	font-size: 2em;
+>>>>>>> origin/master
+=======
+	font-family: sans-serif;
+	font-size: 3em;
+	text-align: center;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+h3 {
+	text-align: center;
+	font-size: 2em;
+>>>>>>> origin/master
 }
 
 h4 {
@@ -327,6 +353,10 @@ p {
 /* Kategori    */
 /***************/
 
+.category {
+    padding-top: 80px;
+}
+
 .list {
 	display: flex;
 	flex-direction: column;
@@ -354,6 +384,7 @@ p {
 /***************/
 
 
+/*
 #bike_image {
 	background-image: url(images/splash_image.jpg);
 	background-repeat: no-repeat;
@@ -361,6 +392,7 @@ p {
 	background-position: 55% 0%;
 	height: 60vh;
 }
+*/
 
 .bike_main {
 	padding: 40px 0 0 0;
@@ -379,6 +411,7 @@ p {
 /*****************/
 /* signature page*/
 /*****************/
+/*
 #signature_image {
 	background-image: url(images/Signature_byg_selv_cykel.jpg);
 	background-repeat: no-repeat;
@@ -386,6 +419,7 @@ p {
 	background-position: 55% 0%;
 	height: 40vh;
 }
+*/
 
 
 
