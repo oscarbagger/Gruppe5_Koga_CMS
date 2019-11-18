@@ -369,17 +369,6 @@ p {
 /* bike        */
 /***************/
 
-
-/*
-#bike_image {
-	background-image: url(images/splash_image.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 55% 0%;
-	height: 60vh;
-}
-*/
-
 .bike_main {
 	padding: 40px 0 0 0;
 }
@@ -392,21 +381,6 @@ p {
 .info .pris {
 	height: 20px;
 }
-
-/*****************/
-/* signature page*/
-/*****************/
-/*
-#signature_image {
-	background-image: url(images/Signature_byg_selv_cykel.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 55% 0%;
-	height: 40vh;
-}
-*/
-
-
 
 /***************/
 /* om os       */
@@ -840,4 +814,4 @@ Det er gjort for at kunne style dem ind, hver deres sted i grid'et*/
 
 }
 
-@media only screen and (min-width 801px) and (max-width: 1200px) {}
+@media only screen and (min-width: 801px) and (max-width: 1200px) {}
