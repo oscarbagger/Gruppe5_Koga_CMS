@@ -24,7 +24,7 @@ async function GetJson() {
 }
 
 function FillContainer(index) {
-    container.querySelector("h3").textContent = testimonial_text[index].title.rendered;
+    container.querySelector("h4").textContent = testimonial_text[index].title.rendered;
     container.querySelector("p").textContent = testimonial_text[index].content.rendered;
 }
 
