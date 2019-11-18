@@ -199,7 +199,8 @@ p {
 }
 
 .back {
-	padding: 0 0 0 110px;
+	padding: 30px 0px 0px 20px;
+    position: absolute;
 }
 
 .back a {
@@ -679,6 +680,7 @@ footer #contact_info a {
 			"subheader subheader subheader";
 		background-color: white;
 		margin: 20px 100px 20px;
+        border: 20px solid #eee;
 	}
 
 
