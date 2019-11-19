@@ -200,6 +200,10 @@ p {
     grid-template-columns: 1fr 5fr 1fr;
 }
 
+.testimonial_text {
+    max-width: 600px;
+}
+
 .arrow {
 	position: relative;
 	width: 12vw;
@@ -833,13 +837,13 @@ Det er gjort for at kunne style dem ind, hver deres sted i grid'et*/
     animation-name: transitionOut_kf;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
-    animation-timing-function:linear;
+    animation-timing-function:ease-in-out;
 }
 .transitionIn {
     animation-name: transitionIn_kf;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
-    animation-timing-function:linear;
+    animation-timing-function:ease-in-out;
 }
 
 
@@ -850,14 +854,14 @@ Det er gjort for at kunne style dem ind, hver deres sted i grid'et*/
     }
 
     100% {
-        transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-30%, 0, 0);
         opacity: 0;
     }
 }
 
 @keyframes transitionIn_kf {
     0% {
-        transform: translate3d(45%, 0, 0);
+        transform: translate3d(30%, 0, 0);
         opacity: 0;
     }
     100% {
