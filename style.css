@@ -661,6 +661,31 @@ footer #contact_info a {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 		padding: 20px 100px 20px;
 	}
+    
+    .kategoriIndhold {
+        padding: 0px 110px 0px 110px;
+        display: grid;
+        grid-template-areas: 
+            "header header"
+            "left top"
+            "left bottom";
+    }
+    .kategoriIndhold h1{
+        grid-area: header;
+    }
+    .kategoriIndhold .wp-block-image{
+        grid-area: left;
+    }
+    .kategoriIndhold h2,.kategoriIndhold h3{
+        grid-area: top;
+        width: 40vw;
+    }
+    
+    .kategoriIndhold p{
+        grid-area: bottom;
+        width: 40vw;
+    }
+    
 
 	/***************/
 	/* web bike    */
