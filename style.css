@@ -124,6 +124,13 @@ p a {
     text-decoration: none;
 }
 
+li {
+    font-family: sans-serif;
+    font-size: 1em;
+    padding: 0.5em;
+    letter-spacing: 2px;
+}
+
 /******************/
 /* frontpage text */
 /******************/
@@ -216,6 +223,7 @@ p {
 .back {
 	padding: 30px 0px 0px 20px;
     position: absolute;
+    display: none;
 }
 
 .back a {
@@ -581,7 +589,11 @@ footer #contact_info a {
 		min-width: 450px;
 	}
 
-
+    .back {
+        padding: 30px 0px 0px 20px;
+        position: absolute;
+        display: block;
+    }
 
 
 	/**********************/
@@ -712,7 +724,13 @@ footer #contact_info a {
 
 	.benefits {
 		background-color: white;
+        margin: 20px 100px 20px;
+        border: 20px solid #eee;
 	}
+    
+    .benefits ul {
+        
+    }
 
 
 	/*grid for text*/
